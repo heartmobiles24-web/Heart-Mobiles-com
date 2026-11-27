@@ -1,0 +1,23 @@
+{
+  "note": "Add real photographs to assets/images/team/ and set the \"photo\" path. Leave \"photo\" empty to show an initials avatar instead. Add a member only with their permission.",
+  "members": [
+{
+      "id": "lss-suhel",
+      "name": "L. Suhel",
+      "role": "Founder",
+      "photo": "",
+      "bio": "Founded Heart Mobiles and has been serving customers in Krishnagiri for over 10 years in mobile phones and electronic gadgets.",
+      "tags": ["Founder", "10+ years experience"],
+      "active": true
+    },
+    {
+      "id": "s-abdul-waheed",
+      "name": "S. Abdul Waheed",
+      "role": "Co-Founder & Store Head",
+      "photo": "img/Abdul.png",
+      "bio": "Runs Heart Mobiles and manages day-to-day store operations, helping customers choose the right phone, accessory or service for their needs.",
+      "tags": ["Co-Founder", "10+ years experience"],
+      "active": true
+    }
+  ]
+}

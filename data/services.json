@@ -1,0 +1,101 @@
+{
+  "note": "Service descriptions use generally accepted wording and avoid unsupported guarantees. Confirm the exact services, turnaround times and charges offered by the shop before publishing.",
+  "services": [
+    {
+      "id": "branded-smartphones",
+      "title": "Branded Smartphones",
+      "icon": "smartphone",
+      "accent": "brand",
+      "summary": "Genuine branded smartphones across budget, mid-range and premium segments.",
+      "points": [
+        "Multiple brands under one roof",
+        "Sealed boxes with bill and warranty",
+        "Hands-on demonstration before buying",
+        "Guidance to pick the right phone for your budget"
+      ],
+      "cta": { "label": "Enquire on WhatsApp", "type": "whatsapp", "message": "I would like to know about the branded smartphones available at Heart Mobiles." },
+      "active": true
+    },
+    {
+      "id": "mobile-accessories",
+      "title": "Mobile Accessories",
+      "icon": "headphones",
+      "accent": "brand",
+      "summary": "Everyday essentials to protect and power your phone.",
+      "points": [
+        "Covers and tempered glass protection",
+        "Chargers, cables and power banks",
+        "Earphones, headphones and speakers",
+        "Accessories for most popular models"
+      ],
+      "cta": { "label": "Check Availability", "type": "whatsapp", "message": "I would like to know about the mobile accessories available at Heart Mobiles." },
+      "active": true
+    },
+    {
+      "id": "hardware-services",
+      "title": "Hardware Services",
+      "icon": "wrench",
+      "accent": "ink",
+      "summary": "Physical repair support for common mobile hardware problems.",
+      "points": [
+        "Display / screen replacement",
+        "Battery replacement",
+        "Charging port and connector issues",
+        "Speaker, microphone and camera faults",
+        "Water damage inspection and general servicing"
+      ],
+      "note": "Charges and turnaround time depend on the model and are confirmed after inspection at the shop.",
+      "cta": { "label": "Describe Your Issue", "type": "whatsapp", "message": "I need help with a mobile hardware service. My phone is:" },
+      "active": true
+    },
+    {
+      "id": "software-services",
+      "title": "Software Services",
+      "icon": "settings-2",
+      "accent": "ink",
+      "summary": "Software support to get your phone running smoothly again.",
+      "points": [
+        "Software update and flashing",
+        "Virus and unwanted app removal",
+        "Data backup and transfer to a new phone",
+        "App, account and email setup",
+        "Performance clean-up and storage management"
+      ],
+      "note": "Lock or pattern removal is handled only for devices where ownership can be verified with a valid bill or proof of purchase.",
+      "cta": { "label": "Get Software Support", "type": "whatsapp", "message": "I need help with a mobile software issue. My phone is:" },
+      "active": true
+    },
+    {
+      "id": "mobile-exchange",
+      "title": "Mobile Exchange",
+      "icon": "repeat",
+      "accent": "brand",
+      "summary": "Upgrade by exchanging your old mobile phone at the shop.",
+      "points": [
+        "On-the-spot valuation at the shop",
+        "Value adjusted against your new phone",
+        "Model, age and physical condition are considered",
+        "Box, bill and original accessories can improve the value"
+      ],
+      "note": "Final exchange value is decided only after the device is physically inspected at the shop.",
+      "cta": { "label": "Ask for Valuation", "type": "whatsapp", "message": "I would like to exchange my old mobile phone. The model is:" },
+      "active": true
+    },
+    {
+      "id": "emi-facilities",
+      "title": "EMI Facilities",
+      "icon": "credit-card",
+      "accent": "brand",
+      "summary": "Pay in easy instalments on eligible smartphones.",
+      "points": [
+        "Card and consumer finance options",
+        "Available on selected models and price ranges",
+        "Simple documentation at the shop",
+        "Our team explains the full cost before you commit"
+      ],
+      "note": "Approval, down payment, tenure and interest are decided by the bank or finance partner, not by Heart Mobiles.",
+      "cta": { "label": "Ask About EMI", "type": "whatsapp", "message": "I would like to know about the EMI facilities available at Heart Mobiles." },
+      "active": true
+    }
+  ]
+}

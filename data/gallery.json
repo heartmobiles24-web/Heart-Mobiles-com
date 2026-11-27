@@ -1,0 +1,72 @@
+{
+  "note": "Images below are illustrative only. Replace each \"src\" with a real photograph of the shop, placed inside assets/images/gallery/, e.g. \"src\": \"assets/images/gallery/shop-front.jpg\". Add \"width\" and \"height\" for each image to avoid layout shift.",
+  "categories": [
+    { "id": "exterior", "name": "Shop Exterior" },
+    { "id": "interior", "name": "Inside the Shop" },
+    { "id": "mobiles", "name": "Mobile Phones" },
+    { "id": "accessories", "name": "Accessories" },
+    { "id": "displays", "name": "Product Displays" }
+  ],
+  "items": [
+    {
+      "id": "gallery-exterior",
+      "category": "exterior",
+      "src": "img/shop.jpeg",
+      "alt": "Mobile phone shop storefront area",
+      "caption": "Our shop on New Pet, Krishnagiri",
+      "width": 800,
+      "height": 600,
+      "active": true
+    },
+    {
+      "id": "gallery-interior",
+      "category": "interior",
+      "src": "img/shop/brand-new-shop-interior.jpeg",
+      "alt": "Interior of the mobile showroom with display counters",
+      "caption": "Inside Heart Mobiles",
+      "width": 800,
+      "height": 600,
+      "active": true
+    },
+    {
+      "id": "gallery-mobiles",
+      "category": "mobiles",
+      "src": "img/shop/company-branded-smartphones-on-display.jpeg",
+      "alt": "Smartphones displayed on a retail counter",
+      "caption": "Branded smartphones on display",
+      "width": 800,
+      "height": 600,
+      "active": true
+    },
+    {
+      "id": "gallery-accessories",
+      "category": "accessories",
+      "src": "img/shop/Everyday-mobile-accessories.jpeg",
+      "alt": "Shelves of phone cases, chargers and cables",
+      "caption": "Everyday mobile accessories",
+      "width": 800,
+      "height": 600,
+      "active": true
+    },
+    {
+      "id": "gallery-service",
+      "category": "displays",
+      "src": "img/shop/hardware-software-service-desk.jpeg",
+      "alt": "Service counter with mobile repair tools",
+      "caption": "Hardware and software service desk",
+      "width": 800,
+      "height": 600,
+      "active": true
+    },
+    {
+      "id": "gallery-displays",
+      "category": "displays",
+      "src": "img/shop/inside-shop-smartphone-display.jpeg",
+      "alt": "Wall display of smartphones in the shop",
+      "caption": "Compare models side by side",
+      "width": 800,
+      "height": 600,
+      "active": true
+    }
+  ]
+}

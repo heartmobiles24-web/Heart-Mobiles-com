@@ -1,0 +1,164 @@
+{
+  "note": "Edit questions and answers freely. \"category\" is used for the filter buttons on the FAQ section. Keep answers factual and free of guarantees.",
+  "categories": [
+    { "id": "availability", "name": "Mobile Availability" },
+    { "id": "brands", "name": "Brands" },
+    { "id": "accessories", "name": "Accessories" },
+    { "id": "hardware", "name": "Hardware Services" },
+    { "id": "software", "name": "Software Services" },
+    { "id": "exchange", "name": "Mobile Exchange" },
+    { "id": "emi", "name": "EMI Facilities" },
+    { "id": "location", "name": "Shop Location" },
+    { "id": "hours", "name": "Business Hours" },
+    { "id": "contact", "name": "Contact" }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "availability",
+      "q": "Which mobile phones are available at Heart Mobiles?",
+      "a": "We stock smartphones across entry-level, mid-range and premium segments from the brands listed on our website. Because stock changes daily, the fastest way to confirm a particular model is to message us on WhatsApp or call the shop.",
+      "active": true
+    },
+    {
+      "id": "faq-2",
+      "category": "availability",
+      "q": "Can I see and try a phone before buying?",
+      "a": "Yes. You are welcome to visit the shop, hold the phone and compare models side by side before you decide.",
+      "active": true
+    },
+    {
+      "id": "faq-3",
+      "category": "availability",
+      "q": "Do you provide a bill and warranty?",
+      "a": "Genuine branded phones are sold with a proper bill, so the manufacturer's warranty applies as per the brand's policy.",
+      "active": true
+    },
+    {
+      "id": "faq-4",
+      "category": "brands",
+      "q": "Which brands do you deal in?",
+      "a": "We deal in the leading smartphone brands shown in the Brands section of this website. Availability varies by model and time, so please confirm on WhatsApp for a specific model.",
+      "active": true
+    },
+    {
+      "id": "faq-5",
+      "category": "brands",
+      "q": "Can I order a model that is not in stock?",
+      "a": "In many cases yes. Tell us the exact model and variant you want and we will let you know the price and expected availability.",
+      "active": true
+    },
+    {
+      "id": "faq-6",
+      "category": "accessories",
+      "q": "What accessories do you keep?",
+      "a": "Mobile covers, tempered glass screen protectors, chargers, USB cables, earphones, headphones, power banks, speakers, stands and a range of other useful accessories.",
+      "active": true
+    },
+    {
+      "id": "faq-7",
+      "category": "accessories",
+      "q": "Do you fit screen protectors?",
+      "a": "Yes, we assist with fitting tempered glass and covers when you buy them at the shop.",
+      "active": true
+    },
+    {
+      "id": "faq-8",
+      "category": "hardware",
+      "q": "What hardware repairs do you handle?",
+      "a": "Common issues such as display or screen replacement, battery replacement, charging port problems, speaker and microphone faults, camera issues and general servicing. The exact repair and cost are confirmed only after inspecting the device.",
+      "active": true
+    },
+    {
+      "id": "faq-9",
+      "category": "hardware",
+      "q": "How long does a repair take?",
+      "a": "It depends on the fault and on parts availability. Many common repairs are completed quickly, and we will tell you the expected time after inspection.",
+      "active": true
+    },
+    {
+      "id": "faq-10",
+      "category": "software",
+      "q": "Which software services do you offer?",
+      "a": "Software updates, flashing, removal of viruses and unwanted apps, data backup and transfer, app and account setup, and general performance clean-up.",
+      "active": true
+    },
+    {
+      "id": "faq-11",
+      "category": "software",
+      "q": "Can you unlock a phone with a forgotten pattern or password?",
+      "a": "We help only when ownership can be verified with a valid bill or proof of purchase. Devices without valid proof cannot be handled.",
+      "active": true
+    },
+    {
+      "id": "faq-12",
+      "category": "software",
+      "q": "Will I lose my data during a software service?",
+      "a": "Some procedures require a reset. We will inform you beforehand and, where possible, help you back up your data first. Please keep your own backup of important files.",
+      "active": true
+    },
+    {
+      "id": "faq-13",
+      "category": "exchange",
+      "q": "How does the mobile exchange work?",
+      "a": "Bring your old mobile to the shop. We inspect it and offer a value based on the model, age and physical condition. The value is adjusted against the price of your new phone.",
+      "active": true
+    },
+    {
+      "id": "faq-14",
+      "category": "exchange",
+      "q": "What increases the exchange value of my phone?",
+      "a": "A working device in good condition with the original box, bill and accessories usually gets a better value. The final amount is decided only after physical inspection.",
+      "active": true
+    },
+    {
+      "id": "faq-15",
+      "category": "emi",
+      "q": "Is EMI available for buying a smartphone?",
+      "a": "EMI options are available on eligible smartphones through bank cards and consumer finance partners. Eligibility, documents and tenure are decided by the finance partner.",
+      "active": true
+    },
+    {
+      "id": "faq-16",
+      "category": "emi",
+      "q": "Will EMI cost me extra?",
+      "a": "Depending on the scheme, interest or processing charges may apply. Our team will explain the full amount payable before you commit.",
+      "active": true
+    },
+    {
+      "id": "faq-17",
+      "category": "location",
+      "q": "Where exactly is Heart Mobiles located?",
+      "a": "Heart Mobiles is at 272 Chowk Masjid Complex, New Pet, Krishnagiri - 635001, Tamil Nadu. Use the Get Directions button on this website to open the shop location in Google Maps.",
+      "active": true
+    },
+    {
+      "id": "faq-18",
+      "category": "location",
+      "q": "Is there parking near the shop?",
+      "a": "The shop is on the main New Pet area of Krishnagiri, where two-wheeler parking is generally available on the street. For specific guidance, please call us.",
+      "active": true
+    },
+    {
+      "id": "faq-19",
+      "category": "hours",
+      "q": "What are your business hours?",
+      "a": "We are generally open from 9:30 AM to 9:00 PM Monday to Saturday and until 1:30 PM on Sunday. Timings may change on public holidays, so please call before visiting.",
+      "active": true
+    },
+    {
+      "id": "faq-20",
+      "category": "contact",
+      "q": "How do I contact Heart Mobiles?",
+      "a": "Call or message us on +91 99520 05749. WhatsApp is usually the quickest way to check stock, price and offers.",
+      "active": true
+    },
+    {
+      "id": "faq-21",
+      "category": "contact",
+      "q": "Can I place an order through this website?",
+      "a": "This website is a product catalogue, not an online store. There is no online payment here. Send us a WhatsApp enquiry with the model you want and we will guide you through the purchase.",
+      "active": true
+    }
+  ]
+}

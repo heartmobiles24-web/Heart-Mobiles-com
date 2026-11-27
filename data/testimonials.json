@@ -1,0 +1,15 @@
+{
+  "note": "Reviews are intentionally left empty. Only add genuine customer feedback with the customer's permission, and never invent reviews. Copy the object shape below for each new entry.",
+  "schema": {
+    "id": "unique-id",
+    "name": "Customer name",
+    "rating": 5,
+    "text": "The exact words of the customer.",
+    "date": "2026-01-15",
+    "source": "Google / In-store / WhatsApp",
+    "verified": true,
+    "active": true
+  },
+  "emptyMessage": "Customer reviews will appear here once they are collected. If you have bought from Heart Mobiles, we would love to hear about your experience.",
+  "testimonials": []
+}

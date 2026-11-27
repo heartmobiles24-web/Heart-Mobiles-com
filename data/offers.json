@@ -1,0 +1,86 @@
+{
+  "note": "Flash news and offers are placeholders written in a neutral tone. Replace them with the shop's real, currently running offers before publishing. Set \"active\": false or add \"expiresOn\" (YYYY-MM-DD) so expired items stop showing automatically.",
+  "flash": [
+    {
+      "id": "flash-1",
+      "text": "New 5G smartphones have arrived in store - visit Heart Mobiles, New Pet, Krishnagiri",
+      "link": "products.html",
+      "active": true,
+      "expiresOn": ""
+    },
+    {
+      "id": "flash-2",
+      "text": "Exchange your old mobile phone and upgrade with the best available value",
+      "link": "services.html#mobile-exchange",
+      "active": true,
+      "expiresOn": ""
+    },
+    {
+      "id": "flash-3",
+      "text": "EMI facilities available on eligible smartphones - ask our team for details",
+      "link": "services.html#emi-facilities",
+      "active": true,
+      "expiresOn": ""
+    },
+    {
+      "id": "flash-4",
+      "text": "Covers, tempered glass and chargers available for most popular models",
+      "link": "accessories.html",
+      "active": true,
+      "expiresOn": ""
+    },
+    {
+      "id": "flash-5",
+      "text": "Over 10 years of trusted service in mobile phones and electronic gadgets in Krishnagiri",
+      "link": "about.html",
+      "active": true,
+      "expiresOn": ""
+    }
+  ],
+  "offers": [
+    {
+      "id": "offer-festive",
+      "type": "offer",
+      "badge": "Limited period",
+      "title": "Festive Season Price Benefits",
+      "description": "Special price benefits on selected 5G smartphones across our stocked brands. Message us on WhatsApp to know what is available today.",
+      "image": "img/offer/offer1.jpeg",
+      "cta": { "label": "Check Today's Offers", "type": "whatsapp", "message": "I would like to know about the current offers at Heart Mobiles." },
+      "active": true,
+      "expiresOn": "2026-12-31"
+    },
+    {
+      "id": "offer-new-arrivals",
+      "type": "new-arrival",
+      "badge": "New arrival",
+      "title": "Latest 5G Arrivals In Store",
+      "description": "Fresh stock from the leading brands has reached the shop. Drop in for a hands-on look before you decide.",
+      "image": "img/offer/offer2.jpeg",
+      "cta": { "label": "See New Mobiles", "type": "link", "href": "products.html" },
+      "active": true,
+      "expiresOn": ""
+    },
+    {
+      "id": "offer-exchange",
+      "type": "offer",
+      "badge": "Exchange",
+      "title": "Exchange & Upgrade",
+      "description": "Bring your old phone for an on-the-spot valuation and adjust the value against your new purchase.",
+      "image": "img/offer/offer3.jpeg",
+      "cta": { "label": "Ask for Valuation", "type": "whatsapp", "message": "I would like to exchange my old mobile phone. The model is:" },
+      "active": true,
+      "expiresOn": ""
+    },
+    {
+      "id": "offer-emi",
+      "type": "offer",
+      "badge": "EMI",
+      "title": "Easy EMI Options",
+      "description": "Buy the smartphone you want and pay in easy instalments through eligible bank cards and finance partners.",
+      "image": "img/offer/offer4.jpeg",
+      "cta": { "label": "Ask About EMI", "type": "whatsapp", "message": "I would like to know about the EMI facilities available at Heart Mobiles." },
+      "active": true,
+      "expiresOn": ""
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# Heart Mobiles AI Content and Crawler Policy
+
+Website: https://heartmobiles.com/
+Policy updated: 2026-11-27
+
+## Permissions
+
+- Search and answer engines may crawl and index publicly available pages to discover, summarize, and link to Heart Mobiles information.
+- AI systems may quote short portions of public content in responses when useful, provided the response clearly attributes the information to Heart Mobiles and links to the relevant source page.
+- Do not use website content, images, or other materials to train, fine-tune, or build generative AI models or datasets.
+- Do not misrepresent Heart Mobiles, imply endorsement, or present changing product prices, stock, offers, or service terms as guaranteed or current without verification.
+
+## Public paths
+
+The following paths are intended for public discovery and search:
+
+- `/`
+- `/about.html`
+- `/products.html`
+- `/accessories.html`
+- `/services.html`
+- `/contact.html`
+- `/privacy-policy.html`
+- `/developer.html`
+
+## Disallowed paths
+
+Do not crawl or use the following paths:
+
+- `/admin/`
+- `/wp-admin/`
+- `/private/`
+- `/cart/`
+- `/node_modules/`
+- `/.git/`
+- `/404.html`
+
+## Crawler notes
+
+These are Heart Mobiles' content-use preferences. `ai.txt` is a plain-text policy document and is not a standardized crawler-control protocol. Automated agents should also follow the applicable directives in `robots.txt`. Robots directives are not access control; private data should not be published at publicly accessible URLs.

@@ -1,0 +1,61 @@
+{
+  "note": "Brand list for the infinite logo marquee. Set \"logo\" to a path (e.g. assets/images/brands/samsung.svg) to show a logo image, or leave it empty to show the brand wordmark. Set \"active\": false to hide a brand.",
+  "brands": [
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo": "img/brands/samsung.png",
+      "description": "Galaxy S, A, M and F series smartphones across budget to flagship segments.",
+      "active": true
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "logo": "img/brands/apple.png",
+      "description": "iPhone models available on request with bill and warranty.",
+      "active": true
+    },
+    {
+      "id": "redmi",
+      "name": "Redmi",
+      "logo": "img/brands/redmi.png",
+      "description": "Note, numbered and C series value-for-money smartphones.",
+      "active": true
+    },
+    {
+      "id": "realme",
+      "name": "realme",
+      "logo": "img/brands/realme.png",
+      "description": "Narzo, C and number series with strong battery and fast charging.",
+      "active": true
+    },
+    {
+      "id": "vivo",
+      "name": "vivo",
+      "logo": "img/brands/vivo.png",
+      "description": "Y, T and V series with camera and design focus.",
+      "active": true
+    },
+    {
+      "id": "oppo",
+      "name": "OPPO",
+      "logo": "img/brands/oppo.png",
+      "description": "A, K, Reno and F series smartphones and accessories.",
+      "active": true
+    },
+    {
+      "id": "oneplus",
+      "name": "OnePlus",
+      "logo": "img/brands/oneplus.png",
+      "description": "Nord and flagship number series with fast, clean software.",
+      "active": true
+    },
+    {
+      "id": "poco",
+      "name": "POCO",
+      "logo": "img/brands/poco.png",
+      "description": "X, M and C series performance-first smartphones.",
+      "active": true
+    }
+  ]
+}

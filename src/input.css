@@ -1,0 +1,595 @@
+/* ==========================================================================
+   HEART MOBILES - Design system source
+   Tailwind CSS v4. Build with:  npm run build  ->  css/style.css
+   ========================================================================== */
+
+@import "tailwindcss";
+
+@source "../*.html";
+@source "../js/**/*.js";
+
+/* --------------------------------------------------------------------------
+   1. Design tokens
+   -------------------------------------------------------------------------- */
+@theme {
+  /* Typography */
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Brand palette (approved colours) */
+  --color-brand-50: #f2f7fd;
+  --color-brand-100: #dcebfa; /* Light Blue  */
+  --color-brand-200: #bfdbf5;
+  --color-brand-300: #93bce3;
+  --color-brand-400: #6b96be;
+  --color-brand-500: #456f91; /* Steel Blue  */
+  --color-brand-600: #2e5780;
+  --color-brand-700: #1f4870;
+  --color-brand-800: #153b63; /* Deep Blue   */
+  --color-brand-900: #102f50;
+  --color-brand-950: #0a1e34;
+
+  --color-ink: #182536; /* Dark Text       */
+  --color-muted: #64748b; /* Secondary Text */
+  --color-offwhite: #f7f9fc;
+  --color-coolgrey: #e8edf3;
+  --color-wa: #25d366;
+  --color-wa-dark: #1da851;
+
+  /* Elevation */
+  --shadow-soft: 0 1px 2px rgba(16, 47, 80, 0.04), 0 10px 30px -18px rgba(16, 47, 80, 0.25);
+  --shadow-card: 0 1px 3px rgba(16, 47, 80, 0.06), 0 22px 48px -26px rgba(16, 47, 80, 0.32);
+  --shadow-nav: 0 1px 0 rgba(16, 47, 80, 0.06), 0 12px 30px -20px rgba(16, 47, 80, 0.28);
+
+  /* Motion */
+  --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --------------------------------------------------------------------------
+   2. Base
+   -------------------------------------------------------------------------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-offwhite font-sans text-ink antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-extrabold text-brand-950;
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: var(--color-brand-100);
+    color: var(--color-brand-900);
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Components
+   -------------------------------------------------------------------------- */
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1180px] px-5 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-brand-500;
+  }
+
+  .h-section {
+    @apply font-display text-[26px] leading-tight font-extrabold tracking-tight text-brand-950 sm:text-4xl lg:text-[40px];
+  }
+
+  .lead {
+    @apply text-[15px] leading-relaxed text-muted sm:text-base;
+  }
+
+  /* Buttons ---------------------------------------------------------------- */
+  .btn-primary {
+    @apply btn bg-brand-800 text-white shadow-soft hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-card;
+  }
+
+  .btn-outline {
+    @apply btn border border-brand-800/15 bg-white text-brand-900 hover:-translate-y-0.5 hover:border-brand-800/30 hover:bg-brand-50;
+  }
+
+  .btn-white {
+    @apply btn bg-white text-brand-900 shadow-soft hover:-translate-y-0.5 hover:bg-brand-50;
+  }
+
+  .btn-ghost {
+    @apply btn text-brand-800 hover:bg-brand-50;
+  }
+
+  .btn-wa {
+    @apply btn bg-wa text-white shadow-soft hover:-translate-y-0.5 hover:bg-wa-dark hover:shadow-card;
+  }
+
+  .btn-light {
+    @apply btn border border-white/25 bg-white/10 text-white backdrop-blur hover:bg-white/20;
+  }
+
+  .btn-sm {
+    @apply min-h-[38px] rounded-lg px-3.5 py-2 text-[13px];
+  }
+
+  /* Surfaces --------------------------------------------------------------- */
+  .card-hover {
+    @apply transition duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-card;
+  }
+
+  /* Filters & chips -------------------------------------------------------- */
+  .chip {
+    @apply inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-coolgrey bg-white px-3.5 py-2 text-[13px] font-semibold text-brand-700 transition hover:border-brand-300 hover:bg-brand-50;
+  }
+
+  .chip[aria-pressed="true"],
+  .chip.is-active {
+    @apply border-brand-800 bg-brand-800 text-white;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide;
+  }
+
+  /* Forms ------------------------------------------------------------------ */
+  .field-label {
+    @apply mb-1.5 block text-[13px] font-semibold text-brand-900;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-coolgrey bg-white px-4 py-3 text-sm text-ink transition placeholder:text-muted/70 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 focus:outline-none;
+  }
+
+  .input[aria-invalid="true"] {
+    @apply border-red-400 focus:border-red-500 focus:ring-red-100;
+  }
+
+  .field-error {
+    @apply mt-1.5 block text-xs font-semibold text-red-600;
+  }
+
+  /* Navigation ------------------------------------------------------------- */
+  .nav-link {
+    @apply relative rounded-lg px-3 py-2 text-[14px] font-semibold text-brand-900/80 no-underline transition hover:bg-brand-50 hover:text-brand-900;
+  }
+
+  .nav-link[aria-current="page"] {
+    @apply bg-brand-50 text-brand-900;
+  }
+
+  .nav-link[aria-current="page"]::after {
+    content: "";
+    @apply absolute right-3 -bottom-[3px] left-3 h-[2px] rounded-full bg-brand-800;
+  }
+
+  .mobile-link {
+    @apply block rounded-xl px-4 py-3 text-[15px] font-semibold text-brand-900 no-underline transition hover:bg-brand-50;
+  }
+
+  /* Floating action buttons ------------------------------------------------ */
+  .fab {
+    @apply flex h-14 w-14 items-center justify-center rounded-full text-white shadow-card transition duration-200 hover:scale-105;
+  }
+
+  /* Accordion -------------------------------------------------------------- */
+  .faq-item {
+    @apply card overflow-hidden;
+  }
+
+  .faq-trigger {
+    @apply flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left text-[15px] font-bold text-brand-950 transition hover:bg-brand-50/60;
+  }
+
+  .faq-panel {
+    @apply grid grid-rows-[0fr] transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)];
+  }
+
+  .faq-panel > div {
+    @apply overflow-hidden;
+  }
+
+  .faq-item[data-open="true"] .faq-panel {
+    grid-template-rows: 1fr;
+  }
+
+  .faq-item[data-open="true"] .faq-chevron {
+    transform: rotate(180deg);
+  }
+
+  .faq-chevron {
+    @apply shrink-0 transition-transform duration-300;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3b. Composable utilities
+   These are declared with @utility so other component classes can compose them
+   with @apply (Tailwind v4 cannot @apply plain component classes).
+   -------------------------------------------------------------------------- */
+@utility btn {
+  @apply inline-flex min-h-[46px] cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold no-underline transition duration-200;
+}
+
+@utility card {
+  @apply rounded-2xl border border-coolgrey bg-white shadow-soft;
+}
+
+/* --------------------------------------------------------------------------
+   4. Utilities
+   -------------------------------------------------------------------------- */
+@layer utilities {
+  .hairline {
+    @apply border-t border-coolgrey;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. Motion (scroll reveal, marquee, ticker, preloader)
+   -------------------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.7s var(--ease-soft),
+    transform 0.7s var(--ease-soft);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Infinite brand marquee ------------------------------------------------ */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  will-change: transform;
+  animation: hm-marquee var(--marquee-duration, 42s) linear infinite;
+}
+
+/* The sequence is repeated twice inside the track; the gap lives inside each
+   sequence (including a trailing pad) so -50% translates exactly one sequence. */
+.marquee-seq {
+  display: flex;
+  min-height: 3.5rem;
+  align-items: center;
+  gap: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes hm-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Brand marquee: shimmer "loading" state, then a fade-in before it scrolls -- */
+#brand-marquee-track.is-loading {
+  animation-play-state: paused;
+}
+
+/* Infinite logo marquee cells */
+.logo-item {
+  display: flex;
+  height: 3.5rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-wordmark {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  color: var(--color-brand-800);
+  opacity: 0.8;
+  transition:
+    opacity 0.25s var(--ease-soft),
+    color 0.25s var(--ease-soft);
+}
+
+.logo-item:hover .logo-wordmark {
+  opacity: 1;
+  color: var(--color-brand-600);
+}
+
+.brand-skeleton-chip {
+  flex-shrink: 0;
+  height: 2.25rem;
+  width: 7.5rem;
+  border-radius: 0.625rem;
+  background: linear-gradient(100deg, #e8edf3 30%, #f8fafc 50%, #e8edf3 70%);
+  background-size: 200% 100%;
+  animation: hm-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes hm-shimmer {
+  from {
+    background-position: 150% 0;
+  }
+  to {
+    background-position: -50% 0;
+  }
+}
+
+/* Fade the whole strip in once the real brand chips are ready. */
+.marquee.is-ready {
+  animation: hm-fade-in 0.6s var(--ease-soft) both;
+}
+
+@keyframes hm-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive cells: tighter spacing and slightly smaller marks on phones and
+   small tablets. marquee.js measures the resulting width and recomputes the
+   loop duration, so the speed in px/s stays the same on every screen. */
+@media (max-width: 47.99rem) {
+  .marquee-seq {
+    min-height: 2.75rem;
+    gap: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .logo-item {
+    height: 2.75rem;
+  }
+
+  .logo-wordmark {
+    font-size: 1.0625rem;
+  }
+
+  .brand-skeleton-chip {
+    height: 1.875rem;
+    width: 6rem;
+  }
+}
+
+/* Announcement ticker ---------------------------------------------------- */
+.ticker {
+  overflow: hidden;
+}
+
+/* Clipping viewport for the ticker track. The mask fades both edges so items
+   appear and disappear smoothly instead of being cut off mid-letter. */
+.ticker-viewport {
+  position: relative;
+  flex: 1 1 0%;
+  min-width: 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+}
+
+.ticker-track {
+  display: flex;
+  min-height: 1.25rem;
+  width: max-content;
+  align-items: center;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  will-change: transform;
+  animation: hm-ticker var(--marquee-duration, 60s) var(--marquee-easing, linear) infinite;
+}
+
+.ticker-seq {
+  display: flex;
+  align-items: center;
+}
+
+.ticker:hover .ticker-track,
+.ticker:focus-within .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes hm-ticker {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Preloader (auto-dismisses even without JavaScript) --------------------- */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  background: var(--color-brand-950);
+  transition:
+    opacity 0.5s var(--ease-soft),
+    visibility 0.5s var(--ease-soft);
+  animation: hm-preloader-auto-hide 0.5s var(--ease-soft) 2.6s forwards;
+}
+
+#preloader[hidden] {
+  display: none;
+}
+
+/* Returning visitors (same browsing session) never see the preloader. */
+html.hm-returning #preloader {
+  display: none;
+}
+
+#preloader.is-done,
+#preloader[data-done="true"] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  animation: none;
+}
+
+@keyframes hm-preloader-auto-hide {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.preloader-heart {
+  animation: hm-beat 1.5s ease-in-out infinite;
+}
+
+@keyframes hm-beat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.14);
+  }
+  60% {
+    transform: scale(0.98);
+  }
+}
+
+.preloader-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-brand-300), #fff);
+  transform-origin: left;
+  animation: hm-load 1.4s var(--ease-soft) infinite;
+}
+
+@keyframes hm-load {
+  0% {
+    transform: scaleX(0.05);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* Misc ------------------------------------------------------------------- */
+.hero-glow {
+  background:
+    radial-gradient(60% 70% at 12% 8%, rgba(69, 111, 145, 0.28), transparent 60%),
+    radial-gradient(55% 65% at 88% 20%, rgba(21, 59, 99, 0.35), transparent 62%);
+}
+
+.grid-lines {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: linear-gradient(to bottom, #000, transparent 78%);
+  mask-image: linear-gradient(to bottom, #000, transparent 78%);
+}
+
+/* --------------------------------------------------------------------------
+   6. Reduced motion & no-JS safety
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* The logo marquee and the flash-news ticker are the site's two continuous
+     strips and must keep scrolling on every device and system setting, so their
+     animations are re-established here (after the blanket rule above) using
+     longhands, which leaves animation-play-state untouched so hover-pause and
+     the loading pause still work. */
+  .marquee-track {
+    animation-name: hm-marquee !important;
+    animation-duration: var(--marquee-duration, 42s) !important;
+    animation-timing-function: var(--marquee-easing, linear) !important;
+    animation-iteration-count: infinite !important;
+  }
+
+  .ticker-track {
+    animation-name: hm-ticker !important;
+    animation-duration: var(--marquee-duration, 60s) !important;
+    animation-timing-function: var(--marquee-easing, linear) !important;
+    animation-iteration-count: infinite !important;
+  }
+}

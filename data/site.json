@@ -1,0 +1,56 @@
+{
+  "name": "Heart Mobiles",
+  "legalName": "Heart Mobiles",
+  "tagline": "Your Trusted Mobile Destination in Krishnagiri",
+  "shortDescription": "Mobile showroom in Krishnagiri offering branded smartphones, mobile accessories, hardware and software services, mobile exchange and EMI facilities.",
+  "proprietor": "L. Suhel",
+  "manager": "S. Abdul Waheed",
+  "phone": "+919952005749",
+  "phoneDisplay": "+91 82704 94909",
+  "whatsapp": "919952005749",
+  "email": "",
+  "address": {
+    "line1": "272 Chowk Masjid Complex",
+    "line2": "New Pet",
+    "city": "Krishnagiri",
+    "district": "Krishnagiri",
+    "state": "Tamil Nadu",
+    "pincode": "635001",
+    "country": "India",
+    "full": "272 Chowk Masjid Complex, New Pet, Krishnagiri - 635001, Tamil Nadu, India"
+  },
+  "geo": {
+    "latitude": "12.5177498",
+    "longitude": "78.2215699"
+  },
+  "mapsUrl": "https://www.google.com/maps/place/Heart+Mobiles/@12.5177498,78.2215699,17z/data=!3m1!4b1!4m6!3m5!1s0x3bac3576acfd443d:0x2257278c0c6b9011!8m2!3d12.5177498!4d78.2215699!16s%2Fg%2F11_0jsgjk9?entry=ttu&g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D",
+  "reviewUrl": "https://g.page/r/CRGQawyMJ1ciECE/review",
+  "mapsEmbedUrl": "https://www.google.com/maps?q=12.5177498,78.2215699&output=embed",
+  "experienceYears": 10,
+  "establishedNote": "Serving customers in Krishnagiri for over 10 years",
+  "hours": [
+    { "days": "Monday - Saturday", "time": "9:30 AM - 9:00 PM" },
+    { "days": "Sunday", "time": "9:30 AM - 1:30 PM" }
+  ],
+  "hoursConfirmed": false,
+  "hoursNote": "Business hours are indicative only. Please call the shop to confirm before visiting on public holidays.",
+  "whatsappMessage": "Assalamu Alaikum! I visited the Heart Mobiles website. I would like to know more about your available mobile phones, accessories and current offers. Could you please share the details?",
+  "currency": "INR",
+  "currencySymbol": "₹",
+  "priceDisclaimer": "Prices and availability shown on this website are indicative and may change. Please confirm the current price and stock on WhatsApp or at the shop before purchase.",
+  "social": {
+    "facebook": "https://www.facebook.com/share/1Lx29KHhKk/",
+    "instagram": "https://www.instagram.com/heart_mobiles?dmpr=aHdoNnM2cW9zbWV2",
+    "youtube": "https://www.youtube.com/@HeartMobiles"
+  },
+  "developer": {
+    "brand": "CodeCraft by Syed",
+    "tagline": "Create. Solve. Inspire.",
+    "headline": "Digital Experiences Built with Purpose.",
+    "message": "We help businesses establish, strengthen and grow their digital presence through modern web technologies, creative branding and strategic digital solutions.",
+    "website": "https://codecraftbysyed-portfolio.vercel.app/",
+    "email": "",
+    "phone": "+918807595210",
+    "whatsapp": ""
+  }
+}
