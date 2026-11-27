@@ -30,7 +30,7 @@
   "establishedNote": "Serving customers in Krishnagiri for over 10 years",
   "hours": [
     { "days": "Monday - Saturday", "time": "9:30 AM - 9:00 PM" },
-    { "days": "Sunday", "time": "9:30 AM - 1:30 PM" }
+    { "days": "Sunday", "time": "9:30 AM - 9:30 PM" }
   ],
   "hoursConfirmed": false,
   "hoursNote": "Business hours are indicative only. Please call the shop to confirm before visiting on public holidays.",
