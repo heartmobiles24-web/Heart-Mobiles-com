@@ -1,0 +1,15 @@
+# Robots policy for Heart Mobiles: https://heartmobiles.com
+# The wildcard group applies to traditional search and AI crawlers, including
+# Googlebot, Bingbot, GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, and Google-Extended.
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /private/
+Disallow: /cart/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /404.html
+
+Sitemap: https://heartmobiles.com/sitemap.xml
